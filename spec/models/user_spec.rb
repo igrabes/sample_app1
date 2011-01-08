@@ -42,11 +42,11 @@ describe User do
     end
   end
   
-  # it "should reject duplicate email addresses" do
-  #       User.create!(@attr)
-  #       user_with_duplicate_email = User.new(@attr)
-  #       user_with_duplicate_email.should_not be_valid
-  # end
+  it "should reject duplicate email addresses" do
+         User.create!(@attr)
+         user_with_duplicate_email = User.new(@attr)
+         user_with_duplicate_email.should_not be_valid
+   end
   
   # it "should reject email addresses identical up to case" do
   #    upcased_email = "USER@EXAMPLE.COM"
